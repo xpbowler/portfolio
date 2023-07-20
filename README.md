@@ -2,7 +2,7 @@
 
 ## About
 
-The CNN was trained with Tensorflow based on patient RNA-seq data transformed into 2D images suitable for the CNN’s convolutional layer. It contains 2.4M parameters, achieves a 98.7% prediction accuracy, and is able to classify 4 types of cancer: breast, lung, kidney, and uterine cancer. 
+Welcome to my personal website! You can find my portfolio, contact, and resume on here. 
 
 ## Installation
 
@@ -14,21 +14,13 @@ Requirements:
 Instructions:
 1. Clone the repository
 ```
-$ git clone https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website
+$ git clone https://github.com/xpbowler/portfolio
 ```
-2. Install required dependencies
-3. Run frontend
+2. Install required dependencies. Dependency list can be viewed in `package.json`
 ```
-$ cd client
+$ npm install 
+```
+4. Building for deployment (local). It will be hosted on [localhost:3000](http://localhost:3000).
+```
 $ npm start
-```
-3. Activate tensorflow via anaconda and set up environment
-```
-$ conda activate tensorflow
-$ cd flask-server
-$ export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python (on mac)
-```
-4. Run ```server.py``` backend
-```
-$ python server.py
 ```
