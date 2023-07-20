@@ -6,11 +6,6 @@ Welcome to my personal website! You can find my portfolio, contact, and resume o
 
 ## Installation
 
-Requirements: 
-* System: Python (3.11.4), Anaconda (23.3.1)
-* CNN: Tensorflow (2.11)
-* Misc: Flask (2.3.2), React (18.2.0)
-
 Instructions:
 1. Clone the repository
 ```
