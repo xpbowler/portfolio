@@ -1,4 +1,3 @@
-![active development](https://img.shields.io/badge/active%20dev-yes-brightgreen.svg)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/xpbowler/portfolio.svg)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5c482f90-bea6-4778-af7d-152346f9193f/deploy-status)](https://app.netlify.com/sites/rynguyen/deploys)
