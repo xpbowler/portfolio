@@ -2,7 +2,7 @@ import {Box, useTheme, Typography, Card, CardActions, CardContent, CardMedia, Bu
 import React, {Component} from 'react'
 import portfoliodata from './resources/portfoliodata.json'
 import GitHubIcon from '@mui/icons-material/GitHub';
-import './portfolio.css'
+import './css/portfolio.css'
 import {Link} from 'react-router-dom'
 
 const Thing = props => (
@@ -16,7 +16,7 @@ const Thing = props => (
       <Typography gutterBottom variant="h3" component="div">
         {props.thing.title}
       </Typography>
-      <Typography variant="h5" color="text.secondary">
+      <Typography variant="h5">
         {props.thing.description}
       </Typography>
     </CardContent>
@@ -24,7 +24,7 @@ const Thing = props => (
       <IconButton onClick={()=> window.location=`${props.thing.github}`}>
         <GitHubIcon style={{width:'30px', height:'auto'}}/>
       </IconButton>
-      <Button size="small" component={Link} to={`/portfolio/${props.thing.id}`}><Typography color="text.secondary">Learn More</Typography></Button>
+      <Button size="small" component={Link} to={`/portfolio/${props.thing.id}`}><Typography variant="h6">Learn More</Typography></Button>
     </CardActions>
   </Card>
 )
@@ -56,6 +56,8 @@ export default class Portfolio extends Component {
             })}
           </Grid>
         </Box>
+        <br/>
+        <br/>
         <div class='view'>
           <ul class='circles'>
             <li class='h1 item'></li>

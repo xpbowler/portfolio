@@ -15,7 +15,7 @@ const Resume = () => {
                 Contact
             </Typography>
             <br/>
-            <Typography variant="h4"sx={{color: colors.primary[100]}}>
+            <Typography variant="h4">
                 Feel free to contact me at<IconButton><EmailIcon/></IconButton>
                 <a style={{color: colors.primary[100]}} rel="noreferrer" target="_blank" href="mailto:ryan.nguyen@uwaterloo.ca">ryan.nguyen@uwaterloo.ca</a>
                 <br/>

@@ -4,7 +4,7 @@ import {createTheme} from '@mui/material/styles'
 export const tokens = (mode) => ({
     ...(mode === "dark" ? {
         grey: {
-            100: "#ededed",
+            100: "#e0e0e0",
             200: "#c2c2c2",
             300: "#a3a3a3",
             400: "#858585",
@@ -20,7 +20,7 @@ export const tokens = (mode) => ({
             300: "#727681",
             400: "#434957",
             500: "#202632",
-            600: "#181b21",
+            600: "#1C2129",
             700: "#0c101b",
             800: "#080b12",
             900: "#040509"
@@ -36,8 +36,15 @@ export const tokens = (mode) => ({
             800: "#1e5245",
             900: "#0f2922"
         },
-        accent: {
+        red: {
+            100: "#f8dcdb",
             200: "#B3BAA0",
+            300: "#e99592",
+            400: "#e2726e",
+            500: "#db4f4a",
+            600: "#af3f3b",
+            700: "#832f2c",
+            800: "#58201e",
             900: "#04050A"
         },
     } : {
@@ -58,7 +65,7 @@ export const tokens = (mode) => ({
             300: "#0c101b",
             400: "#f2f0f0",
             500: "#141b2d",
-            600: "#e3e3e3",
+            600: "#434957",
             700: "#727681",
             800: "#a1a4ab",
             900: "#d0d1d5",
@@ -74,9 +81,16 @@ export const tokens = (mode) => ({
             800: "#b7ebde",
             900: "#dbf5ee",
         },
-        accent: {
-            200: "#ab302c",
-            900: "#d2d6c7",
+        red: {
+            100: "#2c100f",
+            200: "#58201e",
+            300: "#832f2c",
+            400: "#af3f3b",
+            500: "#db4f4a",
+            600: "#e2726e",
+            700: "#e99592",
+            800: "#f1b9b7",
+            900: "#f8dcdb",
         },
     })
 }) 
@@ -92,7 +106,7 @@ export const themeSettings = (mode) => {
                     main: colors.primary[500]
                 },
                 secondary: {
-                    main: colors.accent[200]
+                    main: colors.red[200]
                 },
                 neutral: {
                     dark: colors.grey[700],
@@ -107,7 +121,7 @@ export const themeSettings = (mode) => {
                     main: colors.primary[100]
                 },
                 secondary: {
-                    main: colors.accent[200]
+                    main: colors.primary[800]
                 },
                 neutral: {
                     dark: colors.grey[700],
@@ -124,45 +138,27 @@ export const themeSettings = (mode) => {
             fontSize: 12,
             h1: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 40,
-                fontWeight: 300,
-                color: colors.grey[100]
+                fontSize: 40
             },
             h2: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 32,
-                fontWeight: 300,
-                color: colors.grey[100]
+                fontSize: 32
             },
             h3: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 24,
-                fontWeight: 500,
-                color: colors.primary[100],
+                fontSize: 24
             },
             h4: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 20,
-                fontWeight: 300,
-                color: colors.primary[100],
+                fontSize: 20
             },
             h5: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 16,
-                fontWeight: 300,
-                color: colors.primary[100],
+                fontSize: 16
             },
             h6: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 14,
-                fontWeight: 300,
-                color: colors.primary[100],
-            },
-            h7:{
-                fontFamily: ["Open Sans", "sans-serif"].join(","),
-                fontSize: 16,
-                fontWeight: 500,
-                color: colors.grey[900],
+                fontSize: 14
             },
         }
     }

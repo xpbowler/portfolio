@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return(
         <Box >
-            <AppBar position="fixed" style={{background: colors.red[900]}}>
+            <AppBar position="fixed" style={{background: colors.accent[900], paddingTop: '8px', paddingBottom: '8px'}}>
                 <Toolbar>
                     <Typography variant="h2" sx={{color: colors.grey[200]}}>
                         <span>Ryan Nguyen</span>
@@ -25,7 +25,6 @@ const Navbar = () => {
                         value={value}
                         onChange={handleChange}
                         indicatorColor="secondary"
-                        textColor="secondary"
                         variant="scrollable"
                         scrollButtons="auto"
                     >

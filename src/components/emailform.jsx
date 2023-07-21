@@ -84,9 +84,9 @@ export default class ReactMailForm extends Component {
                         this.setState({ sentMail: true });
                     }}
                     color="secondary"
-                    sx={{color:'#141b2d', width:'200px', height:'50px'}}
+                    sx={{width:'200px', height:'50px'}}
                 >
-                    <Typography variant="h5">{buttonText}</Typography>
+                    <Typography variant="h7" >{buttonText}</Typography>
                 </Button>
                 <Typography variant="h5" sx={{paddingTop:'25px'}}>
                 Note: will open a new window in your preferred email application to send the message.
