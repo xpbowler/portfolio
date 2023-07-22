@@ -9,7 +9,7 @@ const Acknowledgments = () => {
     const colorMode = useContext(ColorModeContext)
 
     return (
-        <Box sx={{paddingLeft: "33%", paddingRight: "29%", paddingTop:"10em" }} >
+        <Box sx={{paddingLeft: "33%", paddingRight: "25%", paddingTop:"10em" }} >
             <Typography variant="h2">Acknowledgments</Typography>
             <br/>
             <br/>
