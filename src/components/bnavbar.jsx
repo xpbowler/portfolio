@@ -38,13 +38,13 @@ const Bnavbar = () => {
                     <br/>
                     <Typography variant="h6" >
                          Contact
-                         <IconButton onClick={()=> window.location="/contact"}> 
+                         <IconButton component={Link} to='/contact'> 
                             <OpenInNewIcon style={{width:'20px', height:'auto'}}/>
                          </IconButton>
                     </Typography>
                     <Typography variant="h6" >
                         Acknowledgments
-                        <IconButton onClick={()=> window.location="/acknowledgments"}> 
+                        <IconButton component={Link} to='/acknowledgments'> 
                             <OpenInNewIcon style={{width:'20px', height:'auto'}}/>
                          </IconButton>
                     </Typography>
