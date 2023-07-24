@@ -16,14 +16,9 @@ const Resume = () => {
             </Typography>
             <br/>
             <Typography variant="h4">
-                Feel free to contact me at<IconButton><EmailIcon/></IconButton>
-                <a style={{color: colors.primary[100]}} rel="noreferrer" target="_blank" href="mailto:ryan.nguyen@uwaterloo.ca">ryan.nguyen@uwaterloo.ca</a>
+                <IconButton><EmailIcon/></IconButton> The fastest way to contact me is via email 
+                at <a style={{color: colors.primary[100]}} rel="noreferrer" target="_blank" href="mailto:ryan.nguyen@uwaterloo.ca">ryan.nguyen@uwaterloo.ca</a>
                 <br/>
-                <br/>
-                You can also visit me on <a style={{color: colors.primary[100]}} rel="noreferrer" target="_blank" href="https://github.com/xpbowler">GitHub</a>
-                <IconButton>
-                    <OpenInNewIcon onClick={()=> window.location='https://github.com/xpbowler'}/>
-                </IconButton>
             </Typography>
             <Emailform/>
         </Box>

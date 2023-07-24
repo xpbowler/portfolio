@@ -1,7 +1,7 @@
 import {Box,useTheme} from '@mui/material'
 import {useContext} from 'react'
 import {ColorModeContext, tokens} from "../theme"
-import rnresume from './resources/rn-resume.pdf'
+import rnresume from './resources/resume.pdf'
 
 const Resume = () => {
 

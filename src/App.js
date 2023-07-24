@@ -16,28 +16,29 @@ import TVM from './components/resources/portfolio-cards/tvm/tvm'
 
 function App() {
   const [theme,colorMode] = useMode()
-  return (<ColorModeContext.Provider value={colorMode}>
-    <ThemeProvider theme={theme}>
-      <CssBaseline/>
-      <div className="app">
-        <main className="content">
-          <Navbar/>
-          <Routes>
-            <Route path='/' element={<HomePage/>}/>
-            <Route path='/portfolio' element={<Portfolio/>}/>
-            <Route path='/resume' element={<Resume/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/acknowledgments' element={<Acknowledgments/>}/>
-            <Route path='/portfolio/nd' element={<ND/>}/>
-            <Route path='/portfolio/et' element={<ET/>}/>
-            <Route path='/portfolio/tvm' element={<TVM/>}/>
-          </Routes>
-          <Bnavbar/>
-        </main>
-        
-      </div>
-    </ThemeProvider>
-  </ColorModeContext.Provider>
+  return (
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline/>
+        <div className="app">
+          <main className="content">
+            <Navbar/>
+            <Routes>
+              <Route path='/' element={<HomePage/>}/>
+              <Route path='/portfolio' element={<Portfolio/>}/>
+              <Route path='/resume' element={<Resume/>}/>
+              <Route path='/contact' element={<Contact/>}/>
+              <Route path='/acknowledgments' element={<Acknowledgments/>}/>
+              <Route path='/portfolio/nd' element={<ND/>}/>
+              <Route path='/portfolio/et' element={<ET/>}/>
+              <Route path='/portfolio/tvm' element={<TVM/>}/>
+            </Routes>
+            <Bnavbar/>
+          </main>
+          
+        </div>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   )
 }
 

@@ -137,7 +137,7 @@ export const themeSettings = (mode) => {
             h3: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
                 fontSize: 24,
-                fontWeight: 500,
+                fontWeight: 400,
                 color: colors.primary[100],
             },
             h4: {
@@ -168,9 +168,7 @@ export const themeSettings = (mode) => {
     }
 }
 
-export const ColorModeContext = createContext({
-    toggleColorMode: ()=>{}
-})
+export const ColorModeContext = createContext()
 
 export const useMode = () => {
     const [mode, setMode] = useState('dark')
@@ -178,7 +176,7 @@ export const useMode = () => {
     const colorMode = useMemo(
         ()=>({
             toggleColorMode: ()=>
-                setMode(prev => (prev==="light" ? "dark" : "light")),
+                setMode(x => (x==="light" ? "dark" : "light")),
 
         }),
         []
