@@ -50,20 +50,8 @@ export default class ReactMailForm extends Component {
         return (
             <Box>
                 <Box
-                    component="form"
-                    sx={{
-                    '& > :not(style)': {width: '50%', paddingTop:'30px'},
-                    }}
-                    noValidate
-                    autoComplete="off"
-                >
-                    <TextField
-                        type="email"
-                        value={this.state.title}
-                        onChange={this.handleTitleChange}
-                        maxLength={Number(titleMaxLength)}
-                        placeholder={titlePlaceholder}
-                    />
+                    component="form" sx={{'& > :not(style)': {width: '50%', paddingTop:'30px'}}}  noValidate autoComplete="off" >
+                    <TextField type="email" value={this.state.title} onChange={this.handleTitleChange} maxLength={Number(titleMaxLength)} placeholder={titlePlaceholder}/>
                     <br/>
                     <TextField
                         value={this.state.contents}

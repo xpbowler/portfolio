@@ -10,8 +10,8 @@ const Resume = () => {
     const colors = tokens(theme.palette.mode)
 
     return(
-        <Box sx={{paddingLeft: '33%', paddingTop: '7%'}}>
-            <Typography variant="h2" >
+        <Box sx={{paddingLeft: '30%', paddingTop: '11em'}}>
+            <Typography variant="h2">
                 Contact
             </Typography>
             <br/>
