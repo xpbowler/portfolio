@@ -2,7 +2,7 @@ import {Box, useTheme, Typography, IconButton} from '@mui/material'
 import {useContext} from 'react'
 import {Link} from 'react-router-dom'
 import {ColorModeContext, tokens} from "../theme"
-import portrait from './resources/portrait4.png'
+import portrait from './resources/portrait.jpg'
 import './css/2homepage.scss'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
