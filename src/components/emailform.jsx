@@ -77,7 +77,7 @@ export default class ReactMailForm extends Component {
                     <Typography variant="h7" >{buttonText}</Typography>
                 </Button>
                 <Typography variant="h5" sx={{paddingTop:'25px'}}>
-                Note: will open a new window in your preferred email application to send the message.
+                {/*Note: will open a new window in your preferred email application to send the message.*/}
                 </Typography>
             </Box>
         );

@@ -4,8 +4,8 @@ import {createTheme} from '@mui/material/styles'
 export const tokens = (mode) => ({
     ...(mode === "dark" ? {
         grey: {
-            100: "#ededed",
-            200: "#c2c2c2",
+            100: "#fcfcfc",
+            200: "#ededed",
             300: "#a3a3a3",
             400: "#858585",
             500: "#666666",
@@ -19,7 +19,7 @@ export const tokens = (mode) => ({
             200: "#a1a4ab",
             300: "#727681",
             400: "#434957",
-            500: "#202632",
+            500: "#111",
             600: "#181b21",
             700: "#0c101b",
             800: "#080b12",
@@ -37,7 +37,7 @@ export const tokens = (mode) => ({
             900: "#0f2922"
         },
         accent: {
-            200: "#B3BAA0",
+            200: "#0070f3",
             900: "#04050A"
         },
     } : {
@@ -57,8 +57,8 @@ export const tokens = (mode) => ({
             200: "#080b12",
             300: "#0c101b",
             400: "#f2f0f0",
-            500: "#141b2d",
-            600: "#e3e3e3",
+            500: "#e3e3e3",
+            600: "#fcfcfc",
             700: "#727681",
             800: "#a1a4ab",
             900: "#d0d1d5",
@@ -75,7 +75,7 @@ export const tokens = (mode) => ({
             900: "#dbf5ee",
         },
         accent: {
-            200: "#ab302c",
+            200: "#0070f3",
             900: "#d2d6c7",
         },
     })
@@ -138,31 +138,31 @@ export const themeSettings = (mode) => {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
                 fontSize: 24,
                 fontWeight: 400,
-                color: colors.primary[100],
+                color: colors.grey[100],
             },
             h4: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
                 fontSize: 20,
                 fontWeight: 300,
-                color: colors.primary[100],
+                color: colors.grey[100],
             },
             h5: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
                 fontSize: 16,
                 fontWeight: 300,
-                color: colors.primary[100],
+                color: colors.grey[100],
             },
             h6: {
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
                 fontSize: 14,
                 fontWeight: 300,
-                color: colors.primary[100],
+                color: colors.grey[100],
             },
             h7:{
                 fontFamily: ["Open Sans", "sans-serif"].join(","),
                 fontSize: 16,
-                fontWeight: 500,
-                color: colors.grey[900],
+                fontWeight: 550,
+                color: '#fcfcfc',
             },
         }
     }

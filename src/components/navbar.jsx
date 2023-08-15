@@ -15,9 +15,9 @@ const Navbar = () => {
 
     return(
         <Box >
-            <AppBar position="fixed" style={{background: colors.accent[900], paddingTop: '8px', paddingBottom: '8px'}}>
+            <AppBar position="fixed" style={{background: colors.primary[500], paddingTop: '8px', paddingBottom: '8px'}}>
                 <Toolbar>
-                    <Typography variant="h2" sx={{color: colors.grey[200]}}>
+                    <Typography variant="h2" sx={{color: colors.grey[100], fontWeight: '500'}}>
                         <span>Ryan Nguyen</span>
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />

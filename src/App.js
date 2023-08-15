@@ -1,4 +1,4 @@
-import React from 'react'
+import {React} from 'react'
 import {Routes, Route} from 'react-router-dom'
 import {CssBaseline, ThemeProvider} from "@mui/material";
 import {ColorModeContext, useMode} from './theme'
@@ -13,6 +13,7 @@ import Acknowledgments from './components/acknowledgments'
 import ND from './components/resources/portfolio-cards/nd/nd'
 import ET from './components/resources/portfolio-cards/et/et'
 import TVM from './components/resources/portfolio-cards/tvm/tvm'
+import TREG from './components/resources/portfolio-cards/treg/treg'
 
 function App() {
   const [theme,colorMode] = useMode()
@@ -32,6 +33,7 @@ function App() {
               <Route path='/portfolio/nd' element={<ND/>}/>
               <Route path='/portfolio/et' element={<ET/>}/>
               <Route path='/portfolio/tvm' element={<TVM/>}/>
+              <Route path='/portfolio/treg' element={<TREG/>}/>
             </Routes>
             <Bnavbar/>
           </main>

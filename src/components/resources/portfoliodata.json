@@ -17,8 +17,16 @@
         "youtube": "false"
     }, {
         "id": "tvm",
-        "title": "Immunology Research Project",
+        "title": "Research Project (immunology)",
         "description": "In Vitro Generation of Antigen-inexperienced Memory CD8+ T Cells by IL-15 and IL-4.",
+        "date": "Fall 2022 - Present",
+        "featured": "false",
+        "github": "false",
+        "youtube": "false"
+    }, {
+        "id": "treg",
+        "title": "Research Project (immunotherapies)",
+        "description": "Optimization of Treg cell-based therapies by expression of T-bet.",
         "date": "Fall 2022 - Present",
         "featured": "false",
         "github": "false",
