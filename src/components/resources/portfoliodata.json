@@ -6,7 +6,8 @@
         "date": "Winter-Summer 2023",
         "featured": "true",
         "github": "https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website",
-        "youtube": "https://www.youtube.com/watch?v=H1u89yBNDfk"
+        "youtube": "https://www.youtube.com/watch?v=H1u89yBNDfk",
+        "devpost": "false"
     },{
         "id": "et",
         "title": "Exercise Tracker",
@@ -14,7 +15,8 @@
         "date": "Summer 2023",
         "featured": "false",
         "github": "https://github.com/xpbowler/ExerciseTracker",
-        "youtube": "false"
+        "youtube": "false",
+        "devpost": "false"
     }, {
         "id": "tvm",
         "title": "Research Project (immunology)",
@@ -22,7 +24,8 @@
         "date": "Fall 2022 - Present",
         "featured": "false",
         "github": "false",
-        "youtube": "false"
+        "youtube": "false",
+        "devpost": "false"
     }, {
         "id": "treg",
         "title": "Research Project (immunotherapies)",
@@ -30,6 +33,17 @@
         "date": "Fall 2022 - Present",
         "featured": "false",
         "github": "false",
-        "youtube": "false"
+        "youtube": "false",
+        "devpost": "false"
+    }, {
+        "id": "openbias",
+        "title": "OpenBias",
+        "description": "Uncover political bias in media using AI and crowdsource. Web extension, website, and cloud-database",
+        "date": "August 2023",
+        "featured": "true",
+        "github": "https://github.com/kellen-sun/OpenBias",
+        "youtube": "https://www.youtube.com/watch?v=y_Oe78iYdyE",
+        "devpost": "https://devpost.com/software/tbd-xf4rki"
     }
+    
 ]

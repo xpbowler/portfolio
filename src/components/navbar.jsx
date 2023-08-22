@@ -28,12 +28,12 @@ const Navbar = () => {
                         variant="scrollable"
                         scrollButtons="auto"
                     >
-                        <Tab value='/' label={(<Typography variant="h5">Home</Typography>)} component={Link} to='/' />
-                        <Tab value='/portfolio' label={(<Typography variant="h5">Portfolio</Typography>)} component={Link} to='/portfolio'/>
-                        <Tab value='/resume' label={(<Typography variant="h5">Resume</Typography>)} component={Link} to='/resume'/>
-                        <Tab value='/contact' label={(<Typography variant="h5">Contact</Typography>)} component={Link} to='/contact'/>
+                        <Tab value='/' sx={{textTransform:'capitalize'}} label={(<Typography variant="h5">Home</Typography>)} component={Link} to='/' />
+                        <Tab value='/portfolio' sx={{textTransform:'capitalize'}} label={(<Typography variant="h5">Portfolio</Typography>)} component={Link} to='/portfolio'/>
+                        <Tab value='/resume' sx={{textTransform:'capitalize'}} label={(<Typography variant="h5">Resume</Typography>)} component={Link} to='/resume'/>
+                        <Tab value='/contact' sx={{textTransform:'capitalize', marginRight:'10px'}} label={(<Typography variant="h5">Contact</Typography>)} component={Link} to='/contact'/>
                     </Tabs>
-                    <IconButton onClick={colorMode.toggleColorMode}>
+                    <IconButton onClick={colorMode.toggleColorMode} sx={{marginRight:'5px'}}>
                         {theme.palette.mode === 'dark' ? (
                             <DarkModeOutlinedIcon style={{width:'25px', height:'auto'}}/>
                         ) : (

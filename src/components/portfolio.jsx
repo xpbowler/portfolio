@@ -32,6 +32,9 @@ const Thing = props => (
           <YouTubeIcon style={{width:'30px', height:'auto'}}/>
         </IconButton>
       )}
+      {props.thing.devpost==='false' ? (<></>) : (
+        <Button size="small" component={Link} to={`${props.thing.devpost}`}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Devpost</Typography></Button>
+      )}
       <Button size="small" component={Link} to={`/portfolio/${props.thing.id}`}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
     </CardActions>
   </Card>

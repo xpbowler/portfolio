@@ -72,7 +72,7 @@ export default class ReactMailForm extends Component {
                         this.setState({ sentMail: true });
                     }}
                     color="secondary"
-                    sx={{width:'200px', height:'50px'}}
+                    sx={{width:'200px', height:'50px', textTransform:'capitalize'}}
                 >
                     <Typography variant="h7" >{buttonText}</Typography>
                 </Button>

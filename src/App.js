@@ -14,6 +14,7 @@ import ND from './components/resources/portfolio-cards/nd/nd'
 import ET from './components/resources/portfolio-cards/et/et'
 import TVM from './components/resources/portfolio-cards/tvm/tvm'
 import TREG from './components/resources/portfolio-cards/treg/treg'
+import OpenBias from './components/resources/portfolio-cards/openbias/openbias'
 
 function App() {
   const [theme,colorMode] = useMode()
@@ -34,6 +35,7 @@ function App() {
               <Route path='/portfolio/et' element={<ET/>}/>
               <Route path='/portfolio/tvm' element={<TVM/>}/>
               <Route path='/portfolio/treg' element={<TREG/>}/>
+              <Route path='/portfolio/openbias' element={<OpenBias/>}/>
             </Routes>
             <Bnavbar/>
           </main>
