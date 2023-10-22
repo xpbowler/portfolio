@@ -17,11 +17,11 @@ const HomePage = () => {
             <div className='title-container'>
                 <h3 className='subtitle'>Hello, I'm Ryan.</h3>
                 <h1 className='title'>
-                I'm passionate about  {` `}
+                I love {` `}
                 <span className='typed'>
                     <Typed 
-                    strings={['backend dev','rocketry','immunology']}
-                    typeSpeed={85}
+                    strings={['backend dev','game dev','immunology']}
+                    typeSpeed={60}
                     backSpeed={50}
                     loop
                     />

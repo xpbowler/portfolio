@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import portfoliodata from './resources/portfoliodata.json'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import ArticleIcon from '@mui/icons-material/Article';
 import './css/portfolio.css'
 import {Link} from 'react-router-dom'
 
@@ -35,7 +36,7 @@ const Thing = props => (
       {props.thing.devpost==='false' ? (<></>) : (
         <Button size="small" component={Link} to={`${props.thing.devpost}`}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Devpost</Typography></Button>
       )}
-      <Button size="small" component={Link} to={`/portfolio/${props.thing.id}`}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
+      <Button size="small" component={Link} to={(props.thing.learnmore =='false') ? (`/portfolio/${props.thing.id}`) : (`${props.thing.learnmore}`)}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
     </CardActions>
   </Card>
 )
@@ -68,9 +69,9 @@ export default class Portfolio extends Component {
           <Typography variant="h2" sx={{paddingBottom: '20px', fontWeight:'500'}}>All</Typography>
           <Grid container spacing={{ xs: 2, md: 6 }} columns={{ xs: 4, sm: 8, md: 12 }}>
             {this.state.cards.map(x=>{
-              return (
-                <Grid item xs={16} sm={8} md={4} key={x.id}>  <Thing thing={x} key={x.id}/>  </Grid>
-              )
+              if(x.featured==='false'){
+                return <Grid item xs={16} sm={8} md={4} key={x.id}>  <Thing thing={x} key={x.id}/>  </Grid>
+              }
             })}
           </Grid>
         </Box>

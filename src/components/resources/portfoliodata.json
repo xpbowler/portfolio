@@ -1,5 +1,25 @@
 [
     {
+        "id": "voffice",
+        "title": "VOffice",
+        "description": "1st Place, Velocity Innovation Challenge 2023. VR Co-Working and Advisory Spaces for Entrepreneurs.",
+        "date": "September 2023",
+        "featured": "true",
+        "github": "https://github.com/16BitNarwhal/Innovation-Challenge",
+        "youtube": "https://uwaterloo.ca/news/gen-z-imagines-innovative-finance-tools-using-virtual",
+        "devpost": "false",
+        "learnmore": "https://favorable-dog-738489.framer.app/"
+    },{
+        "id": "quicq",
+        "title": "QuickQ",
+        "description": "Best Genesys Hack, Hack the North 2023. Cut down on wait times by seeing aggregated online+in-person queue statistics. ",
+        "date": "September 2023",
+        "featured": "true",
+        "github": "https://github.com/16BitNarwhal/QuicQ",
+        "youtube": "https://www.youtube.com/watch?v=3RY5i7EmOgQ",
+        "devpost": "https://devpost.com/software/quicq",
+        "learnmore": "https://devpost.com/software/quicq"
+    },{
         "id": "nd",
         "title": "NeuroDetect",
         "description": "RNA-seq Based Cancer Identification using a CNN",
@@ -7,17 +27,19 @@
         "featured": "true",
         "github": "https://github.com/xpbowler/RNA-seq-Based-Cancer-Identification---NeuroDetect-Website",
         "youtube": "https://www.youtube.com/watch?v=H1u89yBNDfk",
-        "devpost": "false"
+        "devpost": "false",
+        "learnmore": "false"
     },{
-        "id": "et",
-        "title": "Exercise Tracker",
-        "description": "Website to track and log exercises",
-        "date": "Summer 2023",
+        "id": "openbias",
+        "title": "OpenBias",
+        "description": "Uncover political bias in media using AI and crowdsource. Web extension, website, and cloud-database. Submitted to Hack the 6ix 2023.",
+        "date": "August 2023",
         "featured": "false",
-        "github": "https://github.com/xpbowler/ExerciseTracker",
-        "youtube": "false",
-        "devpost": "false"
-    }, {
+        "github": "https://github.com/kellen-sun/OpenBias",
+        "youtube": "https://www.youtube.com/watch?v=y_Oe78iYdyE",
+        "devpost": "https://devpost.com/software/tbd-xf4rki",
+        "learnmore": "false"
+    },{
         "id": "tvm",
         "title": "Research Project (immunology)",
         "description": "In Vitro Generation of Antigen-inexperienced Memory CD8+ T Cells by IL-15 and IL-4.",
@@ -34,16 +56,17 @@
         "featured": "false",
         "github": "false",
         "youtube": "false",
-        "devpost": "false"
-    }, {
-        "id": "openbias",
-        "title": "OpenBias",
-        "description": "Uncover political bias in media using AI and crowdsource. Web extension, website, and cloud-database",
-        "date": "August 2023",
-        "featured": "true",
-        "github": "https://github.com/kellen-sun/OpenBias",
-        "youtube": "https://www.youtube.com/watch?v=y_Oe78iYdyE",
-        "devpost": "https://devpost.com/software/tbd-xf4rki"
+        "devpost": "false",
+        "learnmore": "false"
+    },{
+        "id": "et",
+        "title": "Exercise Tracker",
+        "description": "Website to track and log exercises",
+        "date": "Summer 2023",
+        "featured": "false",
+        "github": "https://github.com/xpbowler/ExerciseTracker",
+        "youtube": "false",
+        "devpost": "false",
+        "learnmore": "false"
     }
-    
 ]

@@ -15,6 +15,8 @@ import ET from './components/resources/portfolio-cards/et/et'
 import TVM from './components/resources/portfolio-cards/tvm/tvm'
 import TREG from './components/resources/portfolio-cards/treg/treg'
 import OpenBias from './components/resources/portfolio-cards/openbias/openbias'
+import QuicQ from './components/resources/portfolio-cards/quicq/quicq';
+import VOffice from './components/resources/portfolio-cards/voffice/voffice';
 
 function App() {
   const [theme,colorMode] = useMode()
@@ -36,6 +38,8 @@ function App() {
               <Route path='/portfolio/tvm' element={<TVM/>}/>
               <Route path='/portfolio/treg' element={<TREG/>}/>
               <Route path='/portfolio/openbias' element={<OpenBias/>}/>
+              <Route path='/portfolio/quicq' element={<QuicQ/>}/>
+              <Route path='/portfolio/voffice' element={<VOffice/>}/>
             </Routes>
             <Bnavbar/>
           </main>
