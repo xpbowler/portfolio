@@ -17,6 +17,7 @@ import TREG from './components/resources/portfolio-cards/treg/treg'
 import OpenBias from './components/resources/portfolio-cards/openbias/openbias'
 import QuicQ from './components/resources/portfolio-cards/quicq/quicq';
 import VOffice from './components/resources/portfolio-cards/voffice/voffice';
+import PageNotFound from './components/pagenotfound';
 
 function App() {
   const [theme,colorMode] = useMode()
@@ -40,6 +41,7 @@ function App() {
               <Route path='/portfolio/openbias' element={<OpenBias/>}/>
               <Route path='/portfolio/quicq' element={<QuicQ/>}/>
               <Route path='/portfolio/voffice' element={<VOffice/>}/>
+              <Route path='*' element={<PageNotFound/>}/>
             </Routes>
             <Bnavbar/>
           </main>
