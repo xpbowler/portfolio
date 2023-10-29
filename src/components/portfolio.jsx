@@ -36,9 +36,7 @@ const Thing = props => (
       {props.thing.devpost==='false' ? (<></>) : (
         <Button size="small" onClick={()=>window.open(`${props.thing.devpost}`,'_blank')}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Devpost</Typography></Button>
       )}
-      <Button size="small" onClick={()=>{
-        (props.thing.learnmore =='false') ? (window.location=(`/portfolio/${props.thing.id}`)) : (window.open(`${props.thing.learnmore}`,'_blank'))
-      }}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
+      <Button size="small" component={Link} to={(props.thing.learnmore =='false') ? (`/portfolio/${props.thing.id}`) : (`${props.thing.learnmore}`)}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
     </CardActions>
   </Card>
 )
