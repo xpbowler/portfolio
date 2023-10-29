@@ -24,19 +24,21 @@ const Thing = props => (
     </CardContent>
     <CardActions>
       {props.thing.github==='false' ? (<></>) : (
-        <IconButton onClick={()=> window.location=`${props.thing.github}`}>
+        <IconButton onClick={()=> window.open(`${props.thing.github}`,'_blank')}>
           <GitHubIcon style={{width:'30px', height:'auto'}}/>
         </IconButton>
       )}
       {props.thing.youtube==='false' ? (<></>) : (
-        <IconButton onClick={()=>window.location=`${props.thing.youtube}`}>
+        <IconButton onClick={()=>window.open(`${props.thing.youtube}`,'_blank') }>
           <YouTubeIcon style={{width:'30px', height:'auto'}}/>
         </IconButton>
       )}
       {props.thing.devpost==='false' ? (<></>) : (
-        <Button size="small" component={Link} to={`${props.thing.devpost}`}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Devpost</Typography></Button>
+        <Button size="small" onClick={()=>window.open(`${props.thing.devpost}`,'_blank')}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Devpost</Typography></Button>
       )}
-      <Button size="small" component={Link} to={(props.thing.learnmore =='false') ? (`/portfolio/${props.thing.id}`) : (`${props.thing.learnmore}`)}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
+      <Button size="small" onClick={()=>{
+        (props.thing.learnmore =='false') ? (window.location=(`/portfolio/${props.thing.id}`)) : (window.open(`${props.thing.learnmore}`,'_blank'))
+      }}><Typography variant="h6" sx={{paddingLeft: '10px'}}>Learn More</Typography></Button>
     </CardActions>
   </Card>
 )

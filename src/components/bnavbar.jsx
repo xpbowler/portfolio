@@ -22,13 +22,13 @@ const Bnavbar = () => {
                     <br/>
                     <Typography variant="h6" >
                         Github 
-                        <IconButton onClick={()=> window.location="https://github.com/xpbowler"}>
+                        <IconButton onClick={()=> window.open("https://github.com/xpbowler", '_blank')}>
                             <GitHubIcon style={{width:'20px', height:'auto'}}/>
                         </IconButton>
                     </Typography>
                     <Typography variant="h6" >
                         LinkedIn
-                        <IconButton onClick={()=> window.location="https://www.linkedin.com/in/ryan-nguyen-0aa676218/"}>
+                        <IconButton onClick={()=> window.open("https://www.linkedin.com/in/ryan-nguyen05/", '_blank')}>
                             <LinkedInIcon style={{width:'20px', height:'auto'}}/>
                         </IconButton>
                     </Typography>
@@ -54,13 +54,13 @@ const Bnavbar = () => {
                     <br/>
                     <Typography variant="h6" >
                         SE Webring
-                        <IconButton onClick={()=> window.location="https://se-webring.xyz/"}> 
+                        <IconButton onClick={()=>window.open("https://se-webring.xyz/", '_blank')}> 
                             <OpenInNewIcon style={{width:'20px', height:'auto'}}/>
                          </IconButton>
                     </Typography>
                     <Typography variant="h6" >
                         Source code
-                        <IconButton onClick={()=> window.location="https://github.com/xpbowler/portfolio"}>
+                        <IconButton onClick={()=> window.open("https://github.com/xpbowler/portfolio", '_blank')}>
                             <GitHubIcon style={{width:'20px', height:'auto'}}/>
                         </IconButton>
                     </Typography>
