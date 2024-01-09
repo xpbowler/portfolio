@@ -17,11 +17,11 @@ const HomePage = () => {
             <div className='title-container'>
                 <h3 className='subtitle'>Hello, I'm Ryan.</h3>
                 <h1 className='title'>
-                I love {` `}
+                I love working on {` `}
                 <span className='typed'>
                     <Typed 
-                    strings={['backend dev','game dev','immunology']}
-                    typeSpeed={60}
+                    strings={['ML applications', 'game-dev projects']}
+                    typeSpeed={35}
                     backSpeed={50}
                     loop
                     />
@@ -31,10 +31,7 @@ const HomePage = () => {
                     Currently a 1A software engineering student at the University of Waterloo.
                     <br/>
                     <br/>
-                    {/*
-                    Feel free to reach out at <a style={{color: colors.accent[200]}} rel="noreferrer" target="_blank" href="mailto:ryan.nguyen@uwaterloo.ca">ryan.nguyen@uwaterloo.ca</a> {` `}
-                    if my experience interests you!
-                    */}
+                    Check out my projects <a style={{color: colors.primary[100], fontWeight: 500}} rel="noreferrer" href="/portfolio">here</a>!
                 </Typography>
             </div>
         </Box>
